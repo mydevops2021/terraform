@@ -34,7 +34,7 @@ resource "null_resource" "nullprovisoning" {
     connection {
       type = "ssh"
       user = "ubuntu"
-      private_key = file("./forjenkins.pem")
+      private_key = file("C:\Users\User\Downloads/forjenkins.pem")
       host = aws_instance.webserver1.public_ip
     }
     provisioner "remote-exec" {
